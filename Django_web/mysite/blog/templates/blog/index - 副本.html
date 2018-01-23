@@ -1,0 +1,49 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="王彪, wangbiao" />
+<title>基于caffe的图片病理分析</title>
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+<div class="bg"><img src="{% static 'blog/img/bg.jpg' %}" alt=""></div>
+<div class="header clearfix">
+    <a href=""><img src="{% static 'blog/img/logo.jpg' %}" alt=""><span class="logo">Eyecare</span></a>
+    <div class="left"><span class="login">login</span></div>
+</div>
+<div id="main">
+    <div id="body" class="light">
+    	<div id="content" class="show">
+            <div class="demo">
+            	<form id="uploadForm" action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                    <fieldset>
+                                <legend>上传文件</legend>
+                                <input type="file" name="docfile" />
+                                <input type="submit" value="上传"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>       
+    </div>
+</div>
+<div class="layer_footer">
+    <span>© 2017 Eyecare</span>
+    <span class="dot">·</span>
+    <a target="_blank" href="http://www.eyepacs.com/">相关网站</a>
+    <span class="dot">·</span>
+    <a href="" class="footer-mobile-show">联系我们</a>
+    <br />
+    <span>地址：福建省福州市福州地区大学新区学园路2号 物信南楼402</span>
+</div>
+<!--<script src="http://libs.baidu.com/jquery/1.4.4/jquery.js"></script>-->
+<!--<script src="{% static 'blog/js/test.js' %}"></script>-->
+<!-- <script src="test.js"></script> -->
+
+
+</body>
+</html>
