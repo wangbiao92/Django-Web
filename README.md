@@ -1,2 +1,3 @@
-# Django-Web
-Django图片拖拽上传
+- # Django-Web
+- Django图片拖拽上传
+- 教程在这：[教程](https://zhuanlan.zhihu.com/p/33192635)
